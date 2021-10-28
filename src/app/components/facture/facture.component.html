@@ -1,0 +1,77 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">        
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <img src="assets/logo-1.png" alt="" class="img-fluid logo-img me-3" width="40px">
+      <h1 class="text-light float-end"><a routerLink="/dashboard"><b>Jirama</b></a></h1>
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link" routerLink="/dashboard">Mon compte</a></li>
+        <li><a class="nav-link active" routerLink="/facture">Facture</a></li>
+        <li><a class="nav-link" routerLink="/actualite">Actualités</a></li>
+        <li><a class="nav-link" routerLink="/connexion">Déconnexion</a></li>
+        <li><a class="inscription shadow-sm">Koto Fetsy</a></li>
+      </ul>
+      <i class="bi mobile-nav-toggle bi-list"></i>
+    </nav>
+  </div>
+</header>
+
+<div class="container" id="fact">
+  <div class="card mt-2 mb-1">
+    <div class="card-header">
+        Règlement de facture Jirama
+    </div>
+    <div class="card-body">
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Mail</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        </div>
+      </div>
+      <div class="mb-4 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Numéro facture</label>
+        <div class="col-sm-10">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>12554564</option>
+            <option value="1">3543220</option>
+            <option value="2">20092301</option>
+            <option value="3">20004210</option>
+            <option value="3">autres...</option>
+          </select>
+        </div>
+      </div>
+      Mode de paiement
+      <div class="ms-3 mt-4 row">
+        <div class="form-check col-4">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Airtel Money
+          </label> <br>
+          <img src="assets/airtel.png" alt="airtel" width="80px">
+        </div>
+        <div class="form-check col-4">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            MVOLA
+          </label> <br>
+          <img src="assets/mvola.png" alt="airtel" width="100px">
+        </div>
+        <div class="form-check col-4">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Orange Money
+          </label> <br>
+          <img src="assets/orangemoney.jpg" alt="airtel" width="150px">
+        </div>
+      </div>
+
+      <div class="mb-3 mt-5 row">
+        <a class="btn btn-primary w-100" role="button">Payer</a>
+      </div>
+    </div>
+  </div>
+</div>

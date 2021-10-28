@@ -1,0 +1,32 @@
+<section class="login">
+    <h2 class="text-center mb-5">Connexion</h2>
+    <div class="card shadow">
+        <div class="row shadow">
+            <div class="col-6">
+                <a class="btn btn-sm w-100 my-1 active" routerLink="/connexion" role="button">Se connecter</a>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-sm w-100 my-1" routerLink="/inscription" role="button">S'inscrire</a>
+            </div>
+        </div>
+        <div class="card-body pt-5">
+            <h3 class="text-center text-white">JIRAMA</h3>
+            <div class="text-center">
+                <img src="assets/logo-1.png" width="130px" alt="Logo Jirama">
+                <h5 class="mt-2 text-white">Jiro sy Rano Malagasy</h5>
+            </div>
+            <form action="#" class="mt-5">
+                <div class="mb-3">
+                    <input type="email" class="form-control shadow" id="mail" name="mail" placeholder="Adresse mail">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control shadow" id="password" name="password" placeholder="Mot de passe">
+                  </div>
+                  <button class="btn btn-primary w-100" (click)="connexion($event)" routerLink="/dashboard">Connexion</button>
+            </form>
+            <p>
+                {{this.data?.mail}}
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+.login{
+    padding-top: 70px;
+    h2{
+        color: #1d6ead;
+    }
+    .card{
+        background-color: #f59a25;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .row{
+        background-color: white;
+        margin-top: 10px;
+        border: #f59a25 1px solid;
+        a{
+            background-color: #f59a25;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .active{
+        background-color: #1d6ead!important;
+    }
+    .card-body > div{
+        img{
+            background-color: white;
+            border-radius: 50%;
+        }        
+    }
+    form{
+        margin: 0 50px;
+        input{
+            border-radius: 10px;
+        }
+    }
+}
+.btn-primary{
+    background-color: #1d6ead !important;
+}

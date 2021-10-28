@@ -1,0 +1,70 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">        
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <img src="assets/logo-1.png" alt="" class="img-fluid logo-img me-3" width="40px">
+      <h1 class="text-light float-end"><a routerLink="/dashboard"><b>Jirama</b></a></h1>
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link active" routerLink="/dashboard">Mon compte</a></li>
+        <li><a class="nav-link" routerLink="/facture">Facture</a></li>
+        <li><a class="nav-link" routerLink="/actualite">Actualités</a></li>
+        <li><a class="nav-link" routerLink="/connexion">Déconnexion</a></li>
+        <li><a class="inscription shadow-sm">Koto Fetsy</a></li>
+      </ul>
+      <i class="bi mobile-nav-toggle bi-list"></i>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+    <div class="row" id="body">
+        <div class="col-lg-3 col-md-4 d-none d-md-block" id="profil">
+          <div class="card shadow fixed-profil">
+            <div class="fd-profil">
+              <div class="img-profil">
+                <img src="assets/pdp.png" class="card-img-top" alt="photo">
+              </div>
+            </div>
+      
+            <div class="card-body text-center">
+              <h5 class="card-title">Koto Fetsy</h5>
+              <p class="card-text"><b>Email</b> <br> <i>email@example.com</i></p>
+              <p class="card-text"><b>Téléphone</b><br> <i>032 82 975 02</i></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Type de client</b> <br> Particulier</li>
+              <li class="list-group-item"><b>Facture payés</b> <br> 4</li>
+              <li class="list-group-item"><b>Facture impayés</b> <br> 0</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8" id="publication">
+      
+          <div class="card mt-2 mb-1">
+              <a class="card-body text-center text-white btn btn-primary btn-sm " role="button">
+                <fa-icon [icon]="faSign" style="font-size: 30px;"></fa-icon>
+                <b class="ms-3">Signaler un incident ou autres... </b>
+              </a>
+          </div>
+      <div>
+          <div class="card mt-2 mb-1">
+            <div class="card-body">
+              <h3>Courbe</h3> <br>
+              <app-graphe></app-graphe>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <div class="col-lg-3 offset-lg-0 offset-md-4 col-md-8 ">              
+              <img src="assets/jirama-logo.jpg" class="mb-2 shadow-lg" style="width: 100%;" alt="picture">
+              <img src="assets/couv1.gif" class="mb-2 shadow-lg" style="width: 100%;" alt="picture">
+              <img src="assets/couv4.jpg" class="mb-2 shadow-lg" style="width: 100%;" alt="picture">
+              <img src="assets/couv2.jpg" class="mb-2 shadow-lg" style="width: 100%;" alt="picture">
+        </div>
+      </div>    
+</div>

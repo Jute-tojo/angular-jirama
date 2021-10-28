@@ -1,0 +1,37 @@
+<section class="login">    
+    <h2 class="text-center mb-5">Inscription</h2>
+    <div class="card shadow">
+        <div class="row shadow">
+            <div class="col-6">
+                <a class="btn btn-sm w-100 my-1" routerLink="/connexion" role="button">Se connecter</a>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-sm w-100 my-1 active" routerLink="/inscription" role="button">S'inscrire</a>
+            </div>
+        </div>
+        <div class="card-body pt-5">
+            <form >
+                  <div class="mb-3">
+                    <input type="email" class="form-control shadow" id="email" name="mail" placeholder="Adresse mail" [(ngModel)]="mail">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control shadow" id="password" name="password" placeholder="Mot de passe" [(ngModel)]="password">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control shadow" id="nom" name="nom" placeholder="Nom" [(ngModel)]="nom">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control shadow" id="prenom" name="prenom" placeholder="Prénom" [(ngModel)]="prenom">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control shadow" id="phone" name="phone" placeholder="Téléphone (ex 034xxxxxxx)" [(ngModel)]="phone">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control shadow" id="adresse" name="adresse" placeholder="Adresse" [(ngModel)]="adresse">
+                  </div>                       
+                  
+                  <button class="btn btn-primary w-100" (click)="addUser()">Inscrire</button >
+            </form>
+        </div>
+    </div>
+</section>
